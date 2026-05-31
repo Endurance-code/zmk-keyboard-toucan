@@ -14,10 +14,13 @@
         AS: AS {
             compatible = "zmk,behavior-hold-tap";
             label = "AS";
-            bindings = <&none>, <&none>;
+            bindings = <&caps_word>, <&none>;
 
             #binding-cells = <2>;
             tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            require-prior-idle-ms = <0>;
         };
     };
 
