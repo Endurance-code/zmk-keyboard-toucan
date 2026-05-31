@@ -10,6 +10,17 @@
 / {
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
+    behaviors {
+        AS: AS {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AS";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
