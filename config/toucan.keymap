@@ -14,7 +14,7 @@
         AS: AS {
             compatible = "zmk,behavior-hold-tap";
             label = "AS";
-            bindings = <&caps_word>, <&kp>;
+            bindings = <&mt>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <300>;
@@ -30,21 +30,21 @@
         base {
             display-name = "BASE";
             bindings = <
-&trans  &AS 0 Q  &AS 0 W  &AS 0 E  &AS 0 R  &AS 0 T  &AS 0 Y  &AS 0 U  &AS 0 I  &AS 0 O  &AS 0 P  &trans  &trans  &AS 0 A  &AS 0 S  &AS 0 D  &AS 0 F  &AS 0 G  &AS 0 H  &AS 0 J  &AS 0 K  &AS 0 L  &AS 0 SQT  &trans  &trans  &AS 0 Z  &AS 0 X  &AS 0 C  &AS 0 V  &AS 0 B  &AS 0 N  &AS 0 M  &AS 0 COMMA  &AS 0 PERIOD  &AS 0 SLASH  &trans  &kp LEFT_CONTROL  &mo 2  &kp SPACE  &kp RET  &mo 1  &kp BACKSPACE
+&trans  &AS LS(Q) Q  &AS LS(W) W  &AS LS(E) E  &AS LS(R) R  &AS LS(T) T  &AS LS(Y) Y  &AS LS(U) U  &AS LS(I) I  &AS LS(O) O  &AS LS(P) P  &trans  &trans  &AS LS(A) A  &AS LS(S) S  &AS LS(D) D  &AS LS(F) F  &AS LS(G) G  &AS LS(H) H  &AS LS(J) J  &AS LS(K) K  &AS LS(L) L  &AS LS(SQT) SQT  &trans  &trans  &AS LS(Z) Z  &AS LS(X) X  &AS LS(C) C  &AS LS(V) V  &AS LS(B) B  &AS LS(N) N  &AS LS(M) M  &AS LS(COMMA) COMMA  &AS LS(PERIOD) PERIOD  &AS LS(SLASH) SLASH  &trans  &kp LEFT_CONTROL  &mo 2  &kp SPACE  &kp RET  &mo 1  &kp BACKSPACE
             >;
         };
 
         nav {
             display-name = "NAV";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT  &bt BT_CLR  &trans  &kp UP  &trans  &bt BT_SEL 0  &trans  &trans  &kp LCTRL  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &bt BT_SEL 1  &trans  &trans  &kp TILDE  &trans  &trans  &AS 0 SEMICOLON  &kp TAB  &trans  &trans  &trans  &trans  &bt BT_SEL 2  &trans  &kp LEFT_CONTROL  &kp ESC  &kp SPACE  &kp RET  &trans  &kp BACKSPACE
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT  &bt BT_CLR  &trans  &kp UP  &trans  &bt BT_SEL 0  &trans  &trans  &kp LCTRL  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &bt BT_SEL 1  &trans  &trans  &kp TILDE  &trans  &trans  &AS LS(SEMICOLON) SEMICOLON  &kp TAB  &trans  &trans  &trans  &trans  &bt BT_SEL 2  &trans  &kp LEFT_CONTROL  &kp ESC  &kp SPACE  &kp RET  &trans  &kp BACKSPACE
             >;
         };
 
         sym {
             display-name = "SYM";
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp LEFT_ALT  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp EQUAL  &trans  &trans  &AS 0 SLASH  &AS 0 NON_US_BACKSLASH  &AS 0 LEFT_BRACKET  &AS 0 RIGHT_BRACKET  &AS 0 MINUS  &kp PLUS  &kp N4  &kp N5  &kp N6  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PERIOD  &kp N1  &kp N2  &kp N3  &kp ASTERISK  &trans  &kp LGUI  &trans  &kp SPACE  &kp RET  &kp N0  &kp BACKSPACE
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp LEFT_ALT  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp EQUAL  &trans  &trans  &AS LS(SLASH) SLASH  &AS LS(NON_US_BACKSLASH) NON_US_BACKSLASH  &AS LS(LEFT_BRACKET) LEFT_BRACKET  &AS LS(RIGHT_BRACKET) RIGHT_BRACKET  &AS LS(MINUS) MINUS  &kp PLUS  &kp N4  &kp N5  &kp N6  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PERIOD  &kp N1  &kp N2  &kp N3  &kp ASTERISK  &trans  &kp LGUI  &trans  &kp SPACE  &kp RET  &kp N0  &kp BACKSPACE
             >;
         };
 
